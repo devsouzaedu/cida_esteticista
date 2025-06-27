@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #A15C96;
+  --secondary: #F3A3D6;
+  --accent: #67AB9F;
+  --background: #ffffff;
+  --foreground: #333333;
+  --text-light: #666666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --foreground: #f0f0f0;
+    --text-light: #cccccc;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .btn {
+    @apply rounded-full px-6 py-3 font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-90;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-opacity-90;
+  }
+
+  .section {
+    @apply py-12 md:py-20;
+  }
+
+  .whatsapp-float {
+    @apply fixed bottom-6 right-6 z-50 rounded-full shadow-lg transition-transform hover:scale-105;
+  }
+}

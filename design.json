@@ -1,0 +1,71 @@
+{
+    "header": {
+      "logo": "Sablier Clinique",
+      "menu": ["Home", "A Clínica", "Tecnologias", "Contato"]
+    },
+    "hero_section": {
+      "type": "video_background",
+      "video_or_image": "Tour da clínica",
+      "text_overlay": null
+    },
+    "section_apresentacao": {
+      "title": "A beleza de ser única",
+      "subtitle": "Conheça a Sablier Clinique",
+      "description": "Descubra como a Sablier Clinique pode revolucionar seu cuidado pessoal com protocolos individualizados e as melhores tecnologias do mercado.",
+      "image": "Recepção da clínica",
+      "button": {
+        "text": "Conheça nossa clínica",
+        "link": "#"
+      }
+    },
+    "section_protocolos": {
+      "title": "Protocolos individualizados com as melhores tecnologias para cuidar de você",
+      "protocolos": [
+        {
+          "icone": "icone_corpo",
+          "titulo": "Protocolo Corporal",
+          "descricao": "Protocolos exclusivos para estética corporal com resultados visíveis."
+        },
+        {
+          "icone": "icone_rosto",
+          "titulo": "Protocolo Facial",
+          "descricao": "Tratamentos tecnológicos de rejuvenescimento e saúde da pele."
+        },
+        {
+          "icone": "icone_mulher",
+          "titulo": "Protocolo Feminino",
+          "descricao": "Tratamentos para saúde íntima feminina com conforto e segurança."
+        }
+      ]
+    },
+    "section_dra_ligia": {
+      "title": "Dra. Ligia Novais",
+      "subtitulo": "CRM-SP 123456 | RQE – AQUIVAI",
+      "descricao": "Com 20 anos de experiência, é uma referência em dermatologia. Criou a Sablier com foco em tecnologia e atendimento personalizado.",
+      "imagem": "Foto da Dra. Ligia sentada"
+    },
+    "section_agendamento": {
+      "title": "Agende Sua Avaliação Agora!",
+      "descricao": "Aproveite a oportunidade de experimentar nossos tratamentos de alta tecnologia. Entre em contato e marque sua consulta personalizada.",
+      "botao": {
+        "text": "Agendar Agora",
+        "link": "#"
+      }
+    },
+    "footer": {
+      "logo": "Sablier Clinique",
+      "contato": {
+        "telefone": "11 3360-2430",
+        "email": "contato@sablierclinique.com.br",
+        "endereco": "Rua Bandera Paulista 530, Itaim Bibi – São Paulo"
+      },
+      "social": ["Instagram", "WhatsApp"],
+      "copy": "2024 © Sablier Clinique - Todos os direitos reservados."
+    },
+    "floating_whatsapp": {
+      "ativo": true,
+      "icone": "whatsapp",
+      "link": "https://wa.me/11999999999"
+    }
+  }
+  
