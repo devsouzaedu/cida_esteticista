@@ -26,7 +26,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
             <a 
-              href="https://wa.me/5511XXXXXXXX" 
+              href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20com%20voc%C3%AA!" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-primary inline-block text-center w-full sm:w-auto px-6 py-3 text-sm sm:text-base font-medium"

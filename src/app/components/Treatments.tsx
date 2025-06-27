@@ -23,10 +23,10 @@ const treatmentsData = [
 
 const Treatments = () => {
   return (
-    <section id="tratamentos" className="section">
+    <section id="tratamentos" className="section bg-gray-900">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Tratamentos</h2>
-        <p className="mobile-text text-[--text-light] text-center max-w-3xl mx-auto mb-8 md:mb-12">
+        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast-dark">Tratamentos</h2>
+        <p className="mobile-text text-white/90 text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Protocolos exclusivos e personalizados para cada tipo de pele e necessidade, sempre buscando os melhores resultados
         </p>
         
@@ -50,9 +50,9 @@ const Treatments = () => {
         </div>
         
         <div className="mt-8 md:mt-12 text-center">
-          <p className="mobile-text mb-4 md:mb-6">Interessada em algum tratamento? Entre em contato para uma avaliação personalizada!</p>
+          <p className="mobile-text text-white/90 mb-4 md:mb-6">Interessada em algum tratamento? Entre em contato para uma avaliação personalizada!</p>
           <a 
-            href="https://wa.me/5511XXXXXXXX" 
+            href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20com%20voc%C3%AA!" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn btn-primary inline-block"
