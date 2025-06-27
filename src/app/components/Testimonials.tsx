@@ -40,8 +40,8 @@ const Testimonials = () => {
 
   return (
     <section className="section">
-      <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">O que dizem nossos clientes</h2>
+      <div className="container mobile-padding">
+        <h2 className="mobile-heading font-bold text-center mb-8 md:mb-12 text-contrast">O que dizem nossos clientes</h2>
         
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-white rounded-2xl shadow-lg p-6 md:p-10">

@@ -35,15 +35,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .btn {
-    @apply rounded-full px-6 py-3 font-medium transition-all duration-300;
+    @apply rounded-full px-6 py-3 font-medium transition-all duration-300 shadow-md hover:shadow-lg;
   }
 
   .btn-primary {
-    @apply bg-primary text-white hover:bg-opacity-90;
+    @apply bg-primary text-white hover:bg-opacity-90 hover:scale-105;
   }
 
   .btn-secondary {
-    @apply bg-secondary text-white hover:bg-opacity-90;
+    @apply bg-secondary text-white hover:bg-opacity-90 hover:scale-105;
   }
 
   .section {
@@ -52,5 +52,37 @@ h1, h2, h3, h4, h5, h6 {
 
   .whatsapp-float {
     @apply fixed bottom-6 right-6 z-50 rounded-full shadow-lg transition-transform hover:scale-105;
+  }
+
+  /* Classes para melhor contraste */
+  .text-contrast {
+    @apply text-gray-900;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  }
+
+  .text-contrast-dark {
+    @apply text-white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  }
+
+  .bg-overlay-light {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  }
+
+  .bg-overlay-dark {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  }
+
+  /* Melhorias para responsividade */
+  .mobile-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .mobile-text {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .mobile-heading {
+    @apply text-2xl sm:text-3xl md:text-4xl;
   }
 }

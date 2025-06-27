@@ -24,13 +24,13 @@ const treatmentsData = [
 const Treatments = () => {
   return (
     <section id="tratamentos" className="section">
-      <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Tratamentos</h2>
-        <p className="text-lg text-[--text-light] text-center max-w-3xl mx-auto mb-12">
+      <div className="container mobile-padding">
+        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Tratamentos</h2>
+        <p className="mobile-text text-[--text-light] text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Protocolos exclusivos e personalizados para cada tipo de pele e necessidade, sempre buscando os melhores resultados
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {treatmentsData.map(treatment => (
             <div key={treatment.id} className="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-[1.02]">
               <div className="relative h-64">
@@ -49,8 +49,8 @@ const Treatments = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
-          <p className="text-lg mb-6">Interessada em algum tratamento? Entre em contato para uma avaliação personalizada!</p>
+        <div className="mt-8 md:mt-12 text-center">
+          <p className="mobile-text mb-4 md:mb-6">Interessada em algum tratamento? Entre em contato para uma avaliação personalizada!</p>
           <a 
             href="https://wa.me/5511XXXXXXXX" 
             target="_blank" 

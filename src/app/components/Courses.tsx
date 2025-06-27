@@ -30,13 +30,13 @@ const coursesData = [
 const Courses = () => {
   return (
     <section id="cursos" className="section bg-gray-50">
-      <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Cursos</h2>
-        <p className="text-lg text-[--text-light] text-center max-w-3xl mx-auto mb-12">
+      <div className="container mobile-padding">
+        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Cursos</h2>
+        <p className="mobile-text text-[--text-light] text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Capacitação profissional com certificado para atuar na área de estética. Aprenda com quem tem experiência de mercado.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {coursesData.map(course => (
             <div key={course.id} className="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden">
               <div className="relative h-64 md:h-auto md:w-2/5">
@@ -62,8 +62,8 @@ const Courses = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
-          <p className="text-lg mb-6">Interessada em se profissionalizar? Entre em contato para saber sobre as próximas turmas!</p>
+        <div className="mt-8 md:mt-12 text-center">
+          <p className="mobile-text mb-4 md:mb-6">Interessada em se profissionalizar? Entre em contato para saber sobre as próximas turmas!</p>
           <a 
             href="https://wa.me/5511XXXXXXXX" 
             target="_blank" 

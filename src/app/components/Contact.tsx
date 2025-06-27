@@ -27,7 +27,6 @@ const Contact = () => {
     
     // Simulando envio do formulário
     setTimeout(() => {
-      console.log('Form data:', formData);
       setIsSubmitting(false);
       setSubmitted(true);
       setFormData({
@@ -46,13 +45,13 @@ const Contact = () => {
   
   return (
     <section id="contato" className="section bg-[--primary] text-white">
-      <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Entre em Contato</h2>
-        <p className="text-lg text-white/80 text-center max-w-3xl mx-auto mb-12">
+      <div className="container mobile-padding">
+        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast-dark">Entre em Contato</h2>
+        <p className="mobile-text text-white/90 text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Tem alguma dúvida ou quer agendar uma consulta? Preencha o formulário ou entre em contato diretamente pelos nossos canais.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div>
             <h3 className="text-2xl font-semibold mb-6">Informações de Contato</h3>
             
@@ -134,7 +133,7 @@ const Contact = () => {
               ) : (
                 <>
                   <div className="mb-4">
-                    <label htmlFor="name" className="block text-gray-700 mb-2 font-medium">Nome</label>
+                    <label htmlFor="name" className="block text-white mb-2 font-medium">Nome</label>
                     <input 
                       type="text" 
                       id="name" 
@@ -148,7 +147,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <label htmlFor="email" className="block text-gray-700 mb-2 font-medium">Email</label>
+                    <label htmlFor="email" className="block text-white mb-2 font-medium">Email</label>
                     <input 
                       type="email" 
                       id="email" 
@@ -162,7 +161,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <label htmlFor="phone" className="block text-gray-700 mb-2 font-medium">Telefone</label>
+                    <label htmlFor="phone" className="block text-white mb-2 font-medium">Telefone</label>
                     <input 
                       type="tel" 
                       id="phone" 
@@ -175,7 +174,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <label htmlFor="message" className="block text-gray-700 mb-2 font-medium">Mensagem</label>
+                    <label htmlFor="message" className="block text-white mb-2 font-medium">Mensagem</label>
                     <textarea 
                       id="message" 
                       name="message" 
