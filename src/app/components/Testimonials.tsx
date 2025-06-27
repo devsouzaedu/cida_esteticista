@@ -39,9 +39,9 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="section">
+    <section className="section bg-gray-900">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-bold text-center mb-8 md:mb-12 text-contrast">O que dizem nossos clientes</h2>
+        <h2 className="mobile-heading font-bold text-center mb-8 md:mb-12 text-contrast-dark">O que dizem nossos clientes</h2>
         
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-white rounded-2xl shadow-lg p-6 md:p-10">
@@ -69,7 +69,7 @@ const Testimonials = () => {
                 ))}
               </div>
               
-              <p className="text-lg md:text-xl italic mb-4">&ldquo;{testimonials[activeIndex].text}&rdquo;</p>
+              <p className="text-lg md:text-xl italic mb-4 text-gray-900 font-medium">&ldquo;{testimonials[activeIndex].text}&rdquo;</p>
               <h4 className="font-medium text-[--primary]">{testimonials[activeIndex].name}</h4>
             </div>
             

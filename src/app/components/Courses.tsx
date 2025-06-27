@@ -29,10 +29,10 @@ const coursesData = [
 
 const Courses = () => {
   return (
-    <section id="cursos" className="section bg-gray-50">
+    <section id="cursos" className="section bg-gray-900">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Cursos</h2>
-        <p className="mobile-text text-[--text-light] text-center max-w-3xl mx-auto mb-8 md:mb-12">
+        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast-dark">Cursos</h2>
+        <p className="mobile-text text-white/90 text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Capacitação profissional com certificado para atuar na área de estética. Aprenda com quem tem experiência de mercado.
         </p>
         
@@ -63,7 +63,7 @@ const Courses = () => {
         </div>
         
         <div className="mt-8 md:mt-12 text-center">
-          <p className="mobile-text mb-4 md:mb-6">Interessada em se profissionalizar? Entre em contato para saber sobre as próximas turmas!</p>
+          <p className="mobile-text text-white/90 mb-4 md:mb-6">Interessada em se profissionalizar? Entre em contato para saber sobre as próximas turmas!</p>
           <a 
             href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20com%20voc%C3%AA!" 
             target="_blank" 
