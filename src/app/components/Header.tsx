@@ -9,17 +9,11 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleMenu = () => {
@@ -44,62 +38,74 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <header 
-      className={`fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-4'
-      } ${isMenuOpen ? 'z-[9999]' : ''}`}
-    >
-      <div className="container flex justify-between items-center">
-        <div className="flex items-center">
-          <Link href="/" className={`text-xl sm:text-2xl font-bold transition-colors ${scrolled ? 'text-primary' : 'text-white drop-shadow-lg'}`}>
-            Cida Esteticista
-          </Link>
+    <>
+      {/* Header Principal */}
+      <header 
+        className={`fixed top-0 left-0 w-full transition-all duration-300 ${
+          scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-4'
+        }`}
+        style={{ zIndex: 50000 }}
+      >
+        <div className="container flex justify-between items-center">
+          <div className="flex items-center">
+            <Link href="/" className={`text-xl sm:text-2xl font-bold transition-colors ${scrolled ? 'text-primary' : 'text-white drop-shadow-lg'}`}>
+              Cida Esteticista
+            </Link>
+          </div>
+          
+          {/* Desktop Menu */}
+          <nav className="hidden lg:flex space-x-8">
+            <Link href="/" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+              Home
+            </Link>
+            <Link href="#sobre" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+              Sobre
+            </Link>
+            <Link href="#tratamentos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+              Tratamentos
+            </Link>
+            <Link href="#cursos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+              Cursos
+            </Link>
+            <Link href="#contato" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+              Contato
+            </Link>
+          </nav>
+          
+          {/* Mobile Menu Button */}
+          <button 
+            onClick={toggleMenu} 
+            className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-white hover:bg-white/10'}`}
+            style={{ zIndex: 50002 }}
+            aria-label="Menu"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+              {isMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              )}
+            </svg>
+          </button>
         </div>
-        
-        {/* Desktop Menu */}
-        <nav className="hidden lg:flex space-x-8">
-          <Link href="/" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
-            Home
-          </Link>
-          <Link href="#sobre" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
-            Sobre
-          </Link>
-          <Link href="#tratamentos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
-            Tratamentos
-          </Link>
-          <Link href="#cursos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
-            Cursos
-          </Link>
-          <Link href="#contato" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
-            Contato
-          </Link>
-        </nav>
-        
-        {/* Mobile Menu Button */}
-        <button 
-          onClick={toggleMenu} 
-          className={`lg:hidden p-2 rounded-lg transition-colors relative z-[10002] ${scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-white hover:bg-white/10'}`}
-          aria-label="Menu"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-            {isMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            )}
-          </svg>
-        </button>
-      </div>
-      
+      </header>
+
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[10000]" onClick={closeMenu} />
+        <div 
+          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm"
+          style={{ zIndex: 50000 }}
+          onClick={closeMenu}
+        />
       )}
       
       {/* Mobile Menu */}
-      <div className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[10001] ${
-        isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-      }`}>
+      <div 
+        className={`lg:hidden fixed top-0 right-0 h-full w-full max-w-sm bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        style={{ zIndex: 50001 }}
+      >
         <div className="flex flex-col h-full">
           {/* Header do Menu */}
           <div className="flex justify-between items-center p-6 border-b border-gray-200">
@@ -168,7 +174,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 };
 
