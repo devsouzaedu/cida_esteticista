@@ -133,7 +133,7 @@ const Contact = () => {
               ) : (
                 <>
                   <div className="mb-4">
-                    <label htmlFor="name" className="block text-white mb-2 font-medium">Nome</label>
+                    <label htmlFor="name" className="block text-black mb-2 font-medium">Nome</label>
                     <input 
                       type="text" 
                       id="name" 
@@ -147,7 +147,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <label htmlFor="email" className="block text-white mb-2 font-medium">Email</label>
+                    <label htmlFor="email" className="block text-black mb-2 font-medium">Email</label>
                     <input 
                       type="email" 
                       id="email" 
@@ -161,7 +161,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <label htmlFor="phone" className="block text-white mb-2 font-medium">Telefone</label>
+                    <label htmlFor="phone" className="block text-black mb-2 font-medium">Telefone</label>
                     <input 
                       type="tel" 
                       id="phone" 
@@ -174,7 +174,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <label htmlFor="message" className="block text-white mb-2 font-medium">Mensagem</label>
+                    <label htmlFor="message" className="block text-black mb-2 font-medium">Mensagem</label>
                     <textarea 
                       id="message" 
                       name="message" 

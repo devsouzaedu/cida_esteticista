@@ -43,7 +43,7 @@ const Treatments = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[--primary] mb-2">{treatment.title}</h3>
-                <p className="text-[--text-light]">{treatment.description}</p>
+                <p className="text-black">{treatment.description}</p>
               </div>
             </div>
           ))}
