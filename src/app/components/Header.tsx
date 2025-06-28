@@ -47,7 +47,7 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${
         scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-4'
-      }`}
+      } ${isMenuOpen ? 'z-[9999]' : ''}`}
     >
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
@@ -78,7 +78,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={toggleMenu} 
-          className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-white hover:bg-white/10'}`}
+          className={`lg:hidden p-2 rounded-lg transition-colors relative z-[10002] ${scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-white hover:bg-white/10'}`}
           aria-label="Menu"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
@@ -93,11 +93,11 @@ const Header = () => {
       
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998]" onClick={closeMenu} />
+        <div className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[10000]" onClick={closeMenu} />
       )}
       
       {/* Mobile Menu */}
-      <div className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[9999] ${
+      <div className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[10001] ${
         isMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="flex flex-col h-full">
