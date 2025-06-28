@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-[9999] transition-all duration-300 ${
         scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-4'
       }`}
     >
@@ -93,11 +93,11 @@ const Header = () => {
       
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40" onClick={closeMenu} />
+        <div className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[9998]" onClick={closeMenu} />
       )}
       
       {/* Mobile Menu */}
-      <div className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[60] ${
+      <div className={`lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-[9999] ${
         isMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="flex flex-col h-full">
