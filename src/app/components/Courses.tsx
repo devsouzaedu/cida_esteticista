@@ -50,7 +50,7 @@ const Courses = () => {
               <div className="p-6 md:w-3/5 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl font-semibold text-[--primary] mb-2">{course.title}</h3>
-                  <p className="text-[--text-light] mb-4">{course.description}</p>
+                  <p className="text-black mb-4">{course.description}</p>
                 </div>
                 <div className="mt-4">
                   <button className="text-[--primary] font-medium hover:underline">
