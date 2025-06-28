@@ -39,9 +39,9 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="section bg-gray-900">
+    <section className="section bg-gray-100">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-bold text-center mb-8 md:mb-12 text-contrast-dark">O que dizem nossos clientes</h2>
+        <h2 className="mobile-heading font-bold text-center mb-8 md:mb-12 text-contrast">O que dizem nossos clientes</h2>
         
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-white rounded-2xl shadow-lg p-6 md:p-10">

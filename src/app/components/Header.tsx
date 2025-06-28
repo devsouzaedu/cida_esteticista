@@ -58,19 +58,19 @@ const Header = () => {
         
         {/* Desktop Menu */}
         <nav className="hidden lg:flex space-x-8">
-          <Link href="/" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-white/80 drop-shadow-md'}`}>
+          <Link href="/" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
             Home
           </Link>
-          <Link href="#sobre" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-white/80 drop-shadow-md'}`}>
+          <Link href="#sobre" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
             Sobre
           </Link>
-          <Link href="#tratamentos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-white/80 drop-shadow-md'}`}>
+          <Link href="#tratamentos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
             Tratamentos
           </Link>
-          <Link href="#cursos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-white/80 drop-shadow-md'}`}>
+          <Link href="#cursos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
             Cursos
           </Link>
-          <Link href="#contato" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-white/80 drop-shadow-md'}`}>
+          <Link href="#contato" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
             Contato
           </Link>
         </nav>

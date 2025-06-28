@@ -44,10 +44,10 @@ const Contact = () => {
   };
   
   return (
-    <section id="contato" className="section bg-[--primary] text-white">
+    <section id="contato" className="section bg-gray-100 text-black">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast-dark">Entre em Contato</h2>
-        <p className="mobile-text text-white/90 text-center max-w-3xl mx-auto mb-8 md:mb-12">
+        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Entre em Contato</h2>
+        <p className="mobile-text text-black text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Tem alguma dúvida ou quer agendar uma consulta? Preencha o formulário ou entre em contato diretamente pelos nossos canais.
         </p>
         
@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Localização</h4>
-                  <p className="text-white/80">Barueri - Alphaville, São Paulo</p>
+                  <p className="text-black">Barueri - Alphaville, São Paulo</p>
                 </div>
               </div>
               
@@ -77,7 +77,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Telefone</h4>
-                  <p className="text-white/80">(11) 95127-4206</p>
+                  <p className="text-black">(11) 95127-4206</p>
                 </div>
               </div>
               
@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-white/80">contato@cidaesteticista.com.br</p>
+                  <p className="text-black">contato@cidaesteticista.com.br</p>
                 </div>
               </div>
               
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Horário de Atendimento</h4>
-                  <p className="text-white/80">Segunda a Sexta: 9h às 19h<br />Sábados: 9h às 14h</p>
+                  <p className="text-black">Segunda a Sexta: 9h às 19h<br />Sábados: 9h às 14h</p>
                 </div>
               </div>
             </div>

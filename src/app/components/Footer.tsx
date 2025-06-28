@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-100 text-black">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 text-[--secondary]">Cida Esteticista</h3>
-            <p className="text-gray-300 mb-6 max-w-md">
+            <p className="text-black mb-6 max-w-md">
               Tratamentos de estética facial e corporal personalizados em Barueri e Alphaville. 
               Atendimento com excelência e resultados comprovados.
             </p>
@@ -28,17 +28,17 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-[--secondary]">Links Rápidos</h4>
             <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-300 hover:text-white">Home</Link></li>
-              <li><Link href="#sobre" className="text-gray-300 hover:text-white">Sobre</Link></li>
-              <li><Link href="#tratamentos" className="text-gray-300 hover:text-white">Tratamentos</Link></li>
-              <li><Link href="#cursos" className="text-gray-300 hover:text-white">Cursos</Link></li>
-              <li><Link href="#contato" className="text-gray-300 hover:text-white">Contato</Link></li>
+              <li><Link href="/" className="text-black hover:text-gray-600">Home</Link></li>
+              <li><Link href="#sobre" className="text-black hover:text-gray-600">Sobre</Link></li>
+              <li><Link href="#tratamentos" className="text-black hover:text-gray-600">Tratamentos</Link></li>
+              <li><Link href="#cursos" className="text-black hover:text-gray-600">Cursos</Link></li>
+              <li><Link href="#contato" className="text-black hover:text-gray-600">Contato</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-[--secondary]">Contato</h4>
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-3 text-black">
               <li className="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-2 mt-0.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
