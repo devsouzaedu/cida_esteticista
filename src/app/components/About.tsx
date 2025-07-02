@@ -17,21 +17,25 @@ const About = () => {
           </div>
           
           <div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-[--secondary] mb-4">Experiência e Dedicação</h3>
-            <p className="mobile-text text-black mb-4 sm:mb-6">
-              Com mais de 10 anos de experiência na área de estética, Cida Alves se especializou em tratamentos faciais 
-              e corporais avançados, sempre buscando novas técnicas e tecnologias para oferecer os melhores 
-              resultados aos seus clientes.
-            </p>
-            <p className="mobile-text text-black mb-4 sm:mb-6">
-              Formada em estética e cosmetologia, com certificações em diversas técnicas de rejuvenescimento, 
-              tratamentos para acne, hiperpigmentação e recuperação da saúde da pele, Cida Alves desenvolveu protocolos 
-              exclusivos que combinam técnicas manuais com tecnologia de ponta.
-            </p>
-            <p className="mobile-text text-black">
-              Localizada em Barueri/Alphaville, seu espaço oferece um ambiente acolhedor e totalmente equipado 
-              para proporcionar bem-estar e resultados reais em cada atendimento.
-            </p>
+            <div className="flex items-center gap-4 mb-4">
+              <h3 className="text-xl sm:text-2xl font-semibold text-[--secondary]">Cida Alves</h3>
+              <div className="flex gap-2">
+                <a href="#" className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white">
+                  <span className="text-sm">f</span>
+                </a>
+                <a href="https://www.instagram.com/cidaalvesestetica_/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white">
+                  <span className="text-sm">📷</span>
+                </a>
+              </div>
+            </div>
+            <div className="space-y-4 text-black">
+              <p className="mobile-text">
+                <strong>Cida Alves</strong> é uma profissional com mais de 11 anos de experiência na área de Estética e Cosmetologia. Possui graduação em Estética e Cosmetologia, pós-graduação em Estética Clínica e Estética Avançada, além de especializações em Ozônioterapia e PRP. Atualmente, está graduando-se em Enfermagem, ampliando ainda mais seu conhecimento para atuar com excelência na área da saúde.
+              </p>
+              <p className="mobile-text">
+                Com 8 anos de experiência como docente, Cida tem como foco a formação de profissionais qualificados para o pós-operatório e injetáveis, transmitindo seu conhecimento prático e teórico de forma clara e acessível, com ênfase no cuidado ao paciente e nas técnicas mais atualizadas.
+              </p>
+            </div>
           </div>
         </div>
       </div>
