@@ -38,7 +38,7 @@ const Treatments = () => {
       <div className="container mobile-padding">
         <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Tratamentos</h2>
         <p className="mobile-text text-black text-center max-w-3xl mx-auto mb-8 md:mb-12">
-          Protocolos exclusivos e personalizados para cada tipo de pele e necessidade, sempre buscando os melhores resultados
+          Protocolos exclusivos e personalizados para cada tipo de pele e necessidade,, sempre buscando os melhores resultados
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
