@@ -48,9 +48,9 @@ const Header = () => {
       >
         <div className="container flex justify-between items-center">
           <div className="flex items-center">
-            <Link href="/" className={`text-xl sm:text-2xl font-bold transition-colors ${scrolled ? 'text-primary' : 'text-white drop-shadow-lg'}`}>
-              Cida Esteticista
-            </Link>
+                      <Link href="/" className={`text-xl sm:text-2xl font-bold transition-colors ${scrolled ? 'text-primary' : 'text-white drop-shadow-lg'}`}>
+            Cida Alves
+          </Link>
           </div>
           
           {/* Desktop Menu */}

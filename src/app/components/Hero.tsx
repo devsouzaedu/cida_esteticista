@@ -7,9 +7,9 @@ const Hero = () => {
       <div className="absolute inset-0">
         <Image
           src="/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_.jpeg (9).jpeg"
-          alt="Cida Esteticista - Tratamento facial"
+          alt="Cida Alves - Tratamento facial"
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
@@ -22,7 +22,7 @@ const Hero = () => {
             Beleza e Saúde da Sua Pele
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-xl mb-6 sm:mb-8 text-white drop-shadow-md">
-            Tratamentos personalizados de estética facial e corporal em Barueri e Alphaville com a esteticista Cida.
+            Tratamentos personalizados de estética facial e corporal em Barueri e Alphaville com Cida Alves.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
             <a 

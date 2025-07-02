@@ -64,14 +64,22 @@ const Courses = () => {
         
         <div className="mt-8 md:mt-12 text-center">
           <p className="mobile-text text-black mb-4 md:mb-6">Interessada em se profissionalizar? Entre em contato para saber sobre as próximas turmas!</p>
-          <a 
-            href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20com%20voc%C3%AA!" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn btn-primary inline-block"
-          >
-            Saiba mais sobre os cursos
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="/cursos" 
+              className="btn btn-secondary inline-block"
+            >
+              Veja mais sobre os cursos
+            </a>
+            <a 
+              href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20com%20voc%C3%AA!" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary inline-block"
+            >
+              Saiba mais sobre os cursos
+            </a>
+          </div>
         </div>
       </div>
     </section>

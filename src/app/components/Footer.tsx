@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 text-[--secondary]">Cida Esteticista</h3>
+            <h3 className="text-2xl font-bold mb-4 text-[--secondary]">Cida Alves</h3>
             <p className="text-black mb-6 max-w-md">
               Tratamentos de estética facial e corporal personalizados em Barueri e Alphaville. 
               Atendimento com excelência e resultados comprovados.
@@ -64,7 +64,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-gray-800">
           <p className="text-sm text-black text-center">
-            &copy; {new Date().getFullYear()} Cida Esteticista. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Cida Alves. Todos os direitos reservados.
           </p>
         </div>
       </div>

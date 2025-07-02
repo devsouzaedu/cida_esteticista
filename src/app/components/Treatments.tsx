@@ -1,23 +1,34 @@
 import Image from 'next/image';
 
-const treatmentsData = [
+interface Treatment {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  link?: string;
+}
+
+const treatmentsData: Treatment[] = [
   {
     id: 1,
     title: 'Estética Facial',
     description: 'Tratamentos completos para rejuvenescimento, acne, manchas e revitalização da pele do rosto.',
     image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_tratamento_facial.jpeg',
+    link: undefined,
   },
   {
     id: 2,
-    title: 'Pós-Operatório',
+    title: 'Pós Operatório Humanizado',
     description: 'Cuidados especializados para recuperação após procedimentos estéticos e cirúrgicos.',
-    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_tratamento_pos_operatorio.jpeg',
+    image: '/images/WhatsApp Image 2025-06-10 at 10.38.21 (4).jpeg',
+    link: '/pos-operatorio',
   },
   {
     id: 3,
     title: 'Tratamento Capilar',
     description: 'Soluções para queda de cabelo, alopecia e fortalecimento dos fios.',
-    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_tratamento_alopecia (1).jpeg',
+    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_tratamento_alopecia (3).jpeg',
+    link: undefined,
   }
 ];
 
@@ -43,7 +54,15 @@ const Treatments = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-[--primary] mb-2">{treatment.title}</h3>
-                <p className="text-black">{treatment.description}</p>
+                <p className="text-black mb-4">{treatment.description}</p>
+                {treatment.link && (
+                  <a 
+                    href={treatment.link}
+                    className="text-[--primary] font-medium hover:underline"
+                  >
+                    Saiba mais sobre o curso →
+                  </a>
+                )}
               </div>
             </div>
           ))}

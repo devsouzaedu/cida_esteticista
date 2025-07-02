@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Cida Esteticista | Estética Facial e Corporal em Barueri/Alphaville",
-  description: "Tratamentos de estética facial e corporal personalizados em Barueri e Alphaville. Cida Esteticista com anos de experiência e resultados comprovados.",
+  title: "Cida Alves | Estética Facial e Corporal em Barueri/Alphaville",
+  description: "Tratamentos de estética facial e corporal personalizados em Barueri e Alphaville. Cida Alves com anos de experiência e resultados comprovados.",
 };
 
 export default function RootLayout({
