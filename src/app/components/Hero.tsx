@@ -9,7 +9,7 @@ const Hero = () => {
           src="/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_.jpeg (9).jpeg"
           alt="Cida Alves - Tratamento facial"
           fill
-          className="object-cover object-top"
+          className="object-cover object-center md:object-center"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>

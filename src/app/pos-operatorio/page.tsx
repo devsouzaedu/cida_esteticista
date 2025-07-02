@@ -437,7 +437,15 @@ const PosOperatorioPage = () => {
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
-            <Link href="/" className="text-2xl font-bold">Cida Alves</Link>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/images/cida_logo_branco.png"
+                alt="Cida Alves"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+              />
+            </Link>
           </div>
           <p className="text-gray-400">
             Copyright © 2025 Cida Alves. Todos os direitos reservados.

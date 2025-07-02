@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -6,7 +7,15 @@ const Footer = () => {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 text-[--secondary]">Cida Alves</h3>
+            <div className="mb-4">
+              <Image
+                src="/images/cida_alves_logo_footer.jpeg"
+                alt="Cida Alves"
+                width={150}
+                height={60}
+                className="h-12 w-auto"
+              />
+            </div>
             <p className="text-black mb-6 max-w-md">
               Tratamentos de estética facial e corporal personalizados em Barueri e Alphaville. 
               Atendimento com excelência e resultados comprovados.

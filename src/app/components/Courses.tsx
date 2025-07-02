@@ -72,6 +72,14 @@ const Courses = () => {
               Veja mais sobre os cursos
             </a>
             <a 
+              href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20de%20est%C3%A9tica!" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn bg-green-500 text-white hover:bg-green-600 inline-flex items-center gap-2"
+            >
+              📱 Inscrições Abertas
+            </a>
+            <a 
               href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20com%20voc%C3%AA!" 
               target="_blank" 
               rel="noopener noreferrer" 

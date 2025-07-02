@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,11 +48,27 @@ const Header = () => {
         style={{ zIndex: 50000 }}
       >
         <div className="container flex justify-between items-center">
-          <div className="flex items-center">
-                      <Link href="/" className={`text-xl sm:text-2xl font-bold transition-colors ${scrolled ? 'text-primary' : 'text-white drop-shadow-lg'}`}>
-            Cida Alves
+                  <div className="flex items-center">
+          <Link href="/" className="flex items-center">
+            {scrolled ? (
+              <Image
+                src="/images/cida_logo_png.png"
+                alt="Cida Alves"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+              />
+            ) : (
+              <Image
+                src="/images/cida_logo_branco.png"
+                alt="Cida Alves"
+                width={120}
+                height={40}
+                className="h-8 w-auto drop-shadow-lg"
+              />
+            )}
           </Link>
-          </div>
+        </div>
           
           {/* Desktop Menu */}
           <nav className="hidden lg:flex space-x-8">
