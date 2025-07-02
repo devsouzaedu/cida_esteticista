@@ -57,7 +57,7 @@ const Testimonials = () => {
                         src={image}
                         alt={`Depoimento ${currentIndex + index + 1}`}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                       />
                     </div>
                   </div>

@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="mb-4">
               <Image
-                src="/images/cida_alves_logo_footer.jpeg"
+                src="/images/cida_logo_branco.png"
                 alt="Cida Alves"
                 width={150}
                 height={60}

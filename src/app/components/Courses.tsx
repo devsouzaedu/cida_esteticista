@@ -10,7 +10,7 @@ const coursesData = [
   {
     id: 2,
     title: 'Massagem Modeladora',
-    description: 'Domine as técnicas de massagem modeladora e drenagem linfática.',
+    description: 'Domine as tecnicas de massagem modeladora e drenagem linfática.',
     image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_cursos (2).jpeg',
   },
   {
