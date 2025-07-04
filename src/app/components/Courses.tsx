@@ -33,7 +33,7 @@ const Courses = () => {
       <div className="container mobile-padding">
         <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Cursos</h2>
         <p className="mobile-text text-black text-center max-w-3xl mx-auto mb-8 md:mb-12">
-          Capacitação profissional com certificado para atuar na área de estética. Aprenda com quem tem experiência de mercado.
+          Capacitação profissional com certificado para atuar na área de estética. Aprenda com quem tem mais de 11 anos de experiência de mercado.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">

@@ -27,7 +27,7 @@ const treatmentsData: Treatment[] = [
     id: 3,
     title: 'Tratamento Capilar',
     description: 'Soluções para queda de cabelo, alopecia e fortalecimento dos fios.',
-    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_tratamento_alopecia (3).jpeg',
+    image: '/images/cida_esteticista_Tratamento para alopécia..jpeg',
     link: undefined,
   }
 ];

@@ -108,7 +108,7 @@ const CoursesPage = () => {
         <div className="container mobile-padding text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Cursos de Estética</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Capacitação profissional com Cida Alves. Aprenda com quem tem mais de 10 anos de experiência no mercado.
+            Capacitação profissional com Cida Alves. Aprenda com quem tem mais de 11 anos de experiência no mercado.
           </p>
         </div>
       </div>
@@ -197,8 +197,8 @@ const CoursesPage = () => {
                 <div className="flex items-start">
                   <span className="text-primary text-2xl mr-3">✓</span>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Experiência Comprovada</h3>
-                    <p className="text-gray-600">Mais de 10 anos de experiência no mercado de estética</p>
+                                    <h3 className="font-semibold text-gray-800">Experiência Comprovada</h3>
+                <p className="text-gray-600">Mais de 11 anos de experiência no mercado de estética</p>
                   </div>
                 </div>
                 <div className="flex items-start">
