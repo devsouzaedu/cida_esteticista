@@ -77,12 +77,8 @@ const Treatments = () => {
               </div>
               
               <div className="p-6">
-                <div className="flex justify-between items-start mb-3">
+                <div className="mb-3">
                   <h3 className="text-xl font-bold text-gray-800">{treatment.title}</h3>
-                  <div className="text-right">
-                    <div className="text-sm text-gray-500">Investimento</div>
-                    <div className="text-lg font-bold text-blue-600">{treatment.price}</div>
-                  </div>
                 </div>
                 
                 <p className="text-gray-600 mb-4 leading-relaxed">{treatment.description}</p>

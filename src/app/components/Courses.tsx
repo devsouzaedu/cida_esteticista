@@ -29,10 +29,10 @@ const coursesData = [
 
 const Courses = () => {
   return (
-    <section id="cursos" className="section bg-gray-100">
+    <section id="cursos" className="section bg-white">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-normal text-center mb-4 text-contrast font-serif">Cursos</h2>
-        <p className="mobile-text text-black text-center max-w-3xl mx-auto mb-8 md:mb-12">
+        <h2 className="mobile-heading font-normal text-center mb-4 text-high-contrast font-serif">Cursos</h2>
+        <p className="mobile-text text-medium-contrast text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Capacitação profissional com certificado para atuar na área de estética. Aprenda com quem tem mais de 11 anos de experiência de mercado.
         </p>
         
@@ -49,11 +49,11 @@ const Courses = () => {
               </div>
               <div className="p-6 md:w-3/5 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold text-[--primary] mb-2">{course.title}</h3>
-                  <p className="text-black mb-4">{course.description}</p>
+                  <h3 className="text-xl font-semibold text-primary mb-2">{course.title}</h3>
+                  <p className="text-medium-contrast mb-4">{course.description}</p>
                 </div>
                 <div className="mt-4">
-                  <button className="text-[--primary] font-medium hover:underline">
+                  <button className="text-primary font-medium hover:underline">
                     Saiba mais
                   </button>
                 </div>
@@ -63,7 +63,7 @@ const Courses = () => {
         </div>
         
         <div className="mt-8 md:mt-12 text-center">
-          <p className="mobile-text text-black mb-4 md:mb-6">Interessada em se profissionalizar? Entre em contato para saber sobre as próximas turmas!</p>
+          <p className="mobile-text text-medium-contrast mb-4 md:mb-6">Interessada em se profissionalizar? Entre em contato para saber sobre as próximas turmas!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/cursos" 
@@ -141,8 +141,8 @@ const Courses = () => {
 
           {/* Sobre o Curso */}
           <div className="p-8">
-            <h4 className="text-2xl font-bold text-gray-800 mb-4">Sobre o Curso</h4>
-            <div className="space-y-4 text-gray-700">
+            <h4 className="text-2xl font-bold text-high-contrast mb-4">Sobre o Curso</h4>
+            <div className="space-y-4 text-medium-contrast">
               <p>
                 O <strong>Curso Presencial de Pós-Operatório – 70 horas</strong> foi desenvolvido para preparar profissionais da área da estética e da saúde que desejam atuar com segurança, ética e eficiência no acompanhamento de pacientes que passaram por cirurgias plásticas.
               </p>
@@ -160,16 +160,16 @@ const Courses = () => {
 
           {/* Diferenciais */}
           <div className="p-8 bg-gray-50">
-            <h4 className="text-2xl font-bold text-gray-800 mb-8 text-center">Diferenciais do Curso</h4>
+            <h4 className="text-2xl font-bold text-high-contrast mb-8 text-center">Diferenciais do Curso</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-xl shadow-sm">
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-white text-2xl">📚</span>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                <h5 className="text-lg font-semibold text-high-contrast mb-2">
                   Aulas 100% presenciais
                 </h5>
-                <p className="text-gray-600 text-sm">
+                <p className="text-medium-contrast text-sm">
                   Aprenda de verdade! Tenha contato direto com os conteúdos e desenvolva suas habilidades com práticas guiadas.
                 </p>
               </div>
@@ -178,10 +178,10 @@ const Courses = () => {
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-white text-2xl">👩‍⚕️</span>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                <h5 className="text-lg font-semibold text-high-contrast mb-2">
                   Professora experiente
                 </h5>
-                <p className="text-gray-600 text-sm">
+                <p className="text-medium-contrast text-sm">
                   Aprenda com Cida Alves, profissional com mais de 11 anos de experiência e 8 anos como docente.
                 </p>
               </div>
@@ -190,10 +190,10 @@ const Courses = () => {
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-white text-2xl">📋</span>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                <h5 className="text-lg font-semibold text-high-contrast mb-2">
                   Material incluso
                 </h5>
-                <p className="text-gray-600 text-sm">
+                <p className="text-medium-contrast text-sm">
                   Receba apostilas, fichas de anamnese, protocolos e outros materiais de apoio.
                 </p>
               </div>
@@ -202,10 +202,10 @@ const Courses = () => {
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-white text-2xl">🏆</span>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                <h5 className="text-lg font-semibold text-high-contrast mb-2">
                   Certificado
                 </h5>
-                <p className="text-gray-600 text-sm">
+                <p className="text-medium-contrast text-sm">
                   Certificado que comprova sua capacitação e valoriza seu currículo profissional.
                 </p>
               </div>
@@ -214,10 +214,10 @@ const Courses = () => {
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-white text-2xl">🤝</span>
                 </div>
-                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                <h5 className="text-lg font-semibold text-high-contrast mb-2">
                   Networking
                 </h5>
-                <p className="text-gray-600 text-sm">
+                <p className="text-medium-contrast text-sm">
                   Conecte-se com profissionais da área e forme parcerias no mercado.
                 </p>
               </div>
@@ -226,15 +226,15 @@ const Courses = () => {
 
           {/* O que você vai aprender */}
           <div className="p-8">
-            <h4 className="text-2xl font-bold text-gray-800 mb-6 text-center">O Que Você Vai Aprender</h4>
-            <p className="text-gray-700 text-center mb-8">
+            <h4 className="text-2xl font-bold text-high-contrast mb-6 text-center">O Que Você Vai Aprender</h4>
+            <p className="text-medium-contrast text-center mb-8">
               Neste curso, você será capacitada para atuar com segurança e excelência no atendimento de pacientes em período pós-operatório de diversas cirurgias plásticas.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-blue-50 p-6 rounded-xl">
                 <h5 className="text-lg font-semibold text-blue-800 mb-4">LIPOS</h5>
-                <ul className="space-y-2 text-gray-700 text-sm">
+                <ul className="space-y-2 text-medium-contrast text-sm">
                   <li>• Hidrolipo</li>
                   <li>• Vibrolipo</li>
                   <li>• Lipoescultura</li>
@@ -247,7 +247,7 @@ const Courses = () => {
 
               <div className="bg-green-50 p-6 rounded-xl">
                 <h5 className="text-lg font-semibold text-green-800 mb-4">LIFTINGS</h5>
-                <ul className="space-y-2 text-gray-700 text-sm">
+                <ul className="space-y-2 text-medium-contrast text-sm">
                   <li>• Lifting facial</li>
                   <li>• Lifting de braço</li>
                   <li>• Lifting de coxa</li>
@@ -256,7 +256,7 @@ const Courses = () => {
 
               <div className="bg-purple-50 p-6 rounded-xl">
                 <h5 className="text-lg font-semibold text-purple-800 mb-4">ABDOMINOPLASTIAS</h5>
-                <ul className="space-y-2 text-gray-700 text-sm">
+                <ul className="space-y-2 text-medium-contrast text-sm">
                   <li>• Tradicional</li>
                   <li>• Reversa</li>
                   <li>• Em âncora</li>
@@ -267,7 +267,7 @@ const Courses = () => {
 
               <div className="bg-orange-50 p-6 rounded-xl">
                 <h5 className="text-lg font-semibold text-orange-800 mb-4">OUTRAS CIRURGIAS</h5>
-                <ul className="space-y-2 text-gray-700 text-sm">
+                <ul className="space-y-2 text-medium-contrast text-sm">
                   <li>• Blefaroplastia</li>
                   <li>• Rinoplastia</li>
                   <li>• Rinomodelação</li>
@@ -300,7 +300,7 @@ const Courses = () => {
 
           {/* Professora */}
           <div className="p-8 bg-gray-50">
-            <h4 className="text-2xl font-bold text-gray-800 mb-6 text-center">Professora</h4>
+            <h4 className="text-2xl font-bold text-high-contrast mb-6 text-center">Professora</h4>
             <div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
               <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                 <Image
@@ -311,8 +311,8 @@ const Courses = () => {
                 />
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h5 className="text-xl font-bold text-gray-800 mb-2">Cida Alves</h5>
-                <p className="text-gray-700 text-sm">
+                <h5 className="text-xl font-bold text-high-contrast mb-2">Cida Alves</h5>
+                <p className="text-medium-contrast text-sm">
                   <strong>Cida Alves</strong> é uma profissional com mais de 11 anos de experiência na área de Estética e Cosmetologia. Possui graduação em Estética e Cosmetologia, pós-graduação em Estética Clínica e Estética Avançada, além de especializações em Ozônioterapia e PRP.
                 </p>
               </div>
@@ -321,8 +321,8 @@ const Courses = () => {
 
           {/* CTA Final */}
           <div className="p-8 text-center">
-            <h4 className="text-xl font-semibold text-gray-800 mb-4">Inscrições Abertas</h4>
-            <p className="text-gray-600 mb-6">Entre em contato para saber mais sobre o curso e garantir sua vaga!</p>
+            <h4 className="text-xl font-semibold text-high-contrast mb-4">Inscrições Abertas</h4>
+            <p className="text-medium-contrast mb-6">Entre em contato para saber mais sobre o curso e garantir sua vaga!</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="/pos-operatorio" 
@@ -344,7 +344,7 @@ const Courses = () => {
 
         {/* Galeria de Cursos Adicionais */}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Outros Cursos Disponíveis</h3>
+          <h3 className="text-2xl font-bold text-high-contrast mb-6 text-center">Outros Cursos Disponíveis</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-48">
@@ -356,8 +356,8 @@ const Courses = () => {
                 />
               </div>
               <div className="p-4">
-                <h4 className="font-semibold text-gray-800 mb-2">Massagem com Vela - Técnica Avançada</h4>
-                <p className="text-gray-600 text-sm">Aperfeiçoe suas técnicas de massagem relaxante com vela.</p>
+                <h4 className="font-semibold text-high-contrast mb-2">Massagem com Vela - Técnica Avançada</h4>
+                <p className="text-medium-contrast text-sm">Aperfeiçoe suas técnicas de massagem relaxante com vela.</p>
               </div>
             </div>
 
@@ -371,8 +371,8 @@ const Courses = () => {
                 />
               </div>
               <div className="p-4">
-                <h4 className="font-semibold text-gray-800 mb-2">Massagem com Pedras Quentes</h4>
-                <p className="text-gray-600 text-sm">Aprenda técnicas de massagem relaxante com pedras quentes.</p>
+                <h4 className="font-semibold text-high-contrast mb-2">Massagem com Pedras Quentes</h4>
+                <p className="text-medium-contrast text-sm">Aprenda técnicas de massagem relaxante com pedras quentes.</p>
               </div>
             </div>
 
@@ -386,14 +386,14 @@ const Courses = () => {
                 />
               </div>
               <div className="p-4">
-                <h4 className="font-semibold text-gray-800 mb-2">Especialização em Estética</h4>
-                <p className="text-gray-600 text-sm">Curso completo de especialização para profissionais.</p>
+                <h4 className="font-semibold text-high-contrast mb-2">Especialização em Estética</h4>
+                <p className="text-medium-contrast text-sm">Curso completo de especialização para profissionais.</p>
               </div>
             </div>
           </div>
           
           <div className="mt-8 text-center">
-            <p className="text-gray-600 mb-4">Interessada em algum curso específico?</p>
+            <p className="text-medium-contrast mb-4">Interessada em algum curso específico?</p>
             <a 
               href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20disponíveis!" 
               target="_blank" 
