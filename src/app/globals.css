@@ -7,15 +7,15 @@
   --secondary: #540012;
   --accent: #67AB9F;
   --background: #ffffff;
-  --foreground: #ffffff;
-  --text-light: #ffffff;
+  --foreground: #333333;
+  --text-light: #666666;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1a1a1a;
-    --foreground: #ffffff;
-    --text-light: #ffffff;
+    --foreground: #f0f0f0;
+    --text-light: #cccccc;
   }
 }
 
@@ -30,13 +30,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-instrument-serif), Georgia, serif;
   font-weight: 400;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: #1a1a1a;
 }
 
 /* Títulos específicos para mobile */
 .mobile-heading {
   font-family: var(--font-instrument-serif), Georgia, serif;
-  color: #ffffff;
+  color: #1a1a1a;
 }
 
 @layer components {
@@ -66,9 +66,9 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Classes para melhor contraste */
   .text-contrast {
-    @apply text-white;
-    color: #ffffff !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    @apply text-gray-900;
+    color: #1a1a1a !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
   }
 
   .text-contrast-dark {
@@ -78,12 +78,25 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Melhor contraste para textos em fundo branco */
   .text-high-contrast {
-    color: #ffffff !important;
+    color: #1a1a1a !important;
     font-weight: 500;
   }
 
   .text-medium-contrast {
+    color: #2d2d2d !important;
+  }
+
+  /* NOVA: Classe específica para textos brancos sobre fundos escuros */
+  .text-white-on-dark {
     color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  /* NOVA: Classe para títulos brancos sobre fundos escuros */
+  .heading-white-on-dark {
+    font-family: var(--font-instrument-serif), Georgia, serif;
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
   }
 
   .bg-overlay-light {
@@ -101,6 +114,12 @@ h1, h2, h3, h4, h5, h6 {
 
   .mobile-text {
     @apply text-sm sm:text-base md:text-lg;
+    color: #2d2d2d;
+  }
+
+  /* NOVA: Classe para texto mobile branco */
+  .mobile-text-white {
+    @apply text-sm sm:text-base md:text-lg;
     color: #ffffff;
   }
 
@@ -110,6 +129,14 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Classe específica para títulos com Instrument Serif */
   .title-serif {
+    font-family: var(--font-instrument-serif), Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #1a1a1a;
+  }
+
+  /* NOVA: Classe para títulos serif brancos */
+  .title-serif-white {
     font-family: var(--font-instrument-serif), Georgia, serif;
     font-weight: 400;
     letter-spacing: -0.02em;

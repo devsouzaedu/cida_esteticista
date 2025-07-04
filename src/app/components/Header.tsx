@@ -117,77 +117,77 @@ const Header = () => {
       )}
       
       {/* Mobile Menu */}
-      <div 
-        className={`lg:hidden fixed top-0 right-0 h-full w-full max-w-sm bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-        style={{ zIndex: 50001 }}
-      >
-        <div className="flex flex-col h-full">
-          {/* Header do Menu */}
-          <div className="flex justify-between items-center p-6 border-b border-gray-200">
-            <span className="text-xl font-bold text-primary">Menu</span>
-            <button 
-              onClick={closeMenu}
-              className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
-              aria-label="Fechar menu"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          
-          {/* Links do Menu */}
-          <nav className="flex flex-col flex-1 p-6 space-y-6">
-            <Link 
-              href="/" 
-              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
-              onClick={closeMenu}
-            >
-              🏠 Home
-            </Link>
-            <Link 
-              href="#sobre" 
-              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
-              onClick={closeMenu}
-            >
-              👩‍⚕️ Sobre
-            </Link>
-            <Link 
-              href="#tratamentos" 
-              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
-              onClick={closeMenu}
-            >
-              💆‍♀️ Tratamentos
-            </Link>
-            <Link 
-              href="#cursos" 
-              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
-              onClick={closeMenu}
-            >
-              📚 Cursos
-            </Link>
-            <Link 
-              href="#contato" 
-              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
-              onClick={closeMenu}
-            >
-              📞 Contato
-            </Link>
-          </nav>
-          
-          {/* Footer do Menu */}
-          <div className="p-6 border-t border-gray-200">
-            <a 
-              href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20com%20voc%C3%AA!" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="w-full btn btn-primary text-center block"
-              onClick={closeMenu}
-            >
-              💬 WhatsApp
-            </a>
+      <div className={`lg:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={closeMenu}>
+        <div className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`} onClick={(e) => e.stopPropagation()}>
+          <div className="p-6">
+            <div className="flex justify-between items-center mb-8">
+              <Image
+                src="/images/cida_logo_png.png"
+                alt="Cida Alves"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+              />
+              <button 
+                onClick={closeMenu}
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            <nav className="space-y-2">
+              <Link 
+                href="/" 
+                className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+                onClick={closeMenu}
+              >
+                🏠 Home
+              </Link>
+              <Link 
+                href="#sobre" 
+                className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+                onClick={closeMenu}
+              >
+                👩‍⚕️ Sobre
+              </Link>
+              <Link 
+                href="#tratamentos" 
+                className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+                onClick={closeMenu}
+              >
+                ✨ Tratamentos
+              </Link>
+              <Link 
+                href="#cursos" 
+                className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+                onClick={closeMenu}
+              >
+                🎓 Cursos
+              </Link>
+              <Link 
+                href="#contato" 
+                className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+                onClick={closeMenu}
+              >
+                📞 Contato
+              </Link>
+            </nav>
+            
+            <div className="mt-8 pt-6 border-t border-gray-200">
+              <a 
+                href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20uma%20avaliação%20gratuita%20com%20a%20Cida!" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-primary/90 transition-colors inline-flex items-center justify-center gap-2"
+                onClick={closeMenu}
+              >
+                <span>📱</span>
+                Agendar Avaliação
+              </a>
+            </div>
           </div>
         </div>
       </div>
