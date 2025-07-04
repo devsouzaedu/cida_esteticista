@@ -11,7 +11,6 @@ const Contact = () => {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -28,7 +27,6 @@ const Contact = () => {
     // Simulando envio do formulário
     setTimeout(() => {
       setIsSubmitting(false);
-      setSubmitted(true);
       setFormData({
         name: '',
         email: '',
@@ -36,10 +34,8 @@ const Contact = () => {
         message: '',
       });
       
-      // Reset do estado de sucesso após 5 segundos
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 5000);
+      // Aqui você pode adicionar lógica para mostrar mensagem de sucesso
+      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
     }, 1500);
   };
   
