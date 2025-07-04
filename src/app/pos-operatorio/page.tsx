@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const PosOperatorioPage = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(1);
@@ -41,6 +42,12 @@ const PosOperatorioPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Breadcrumbs */}
+      <Breadcrumbs items={[
+        { label: 'Cursos', href: '/cursos' },
+        { label: 'Pós-Operatório' }
+      ]} />
+      
       {/* Header Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
