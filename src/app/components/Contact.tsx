@@ -44,10 +44,10 @@ const Contact = () => {
   };
   
   return (
-    <section id="contato" className="section bg-gray-100 text-black">
+    <section id="contato" className="section bg-gray-100 text-white">
       <div className="container mobile-padding">
         <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Entre em Contato</h2>
-        <p className="mobile-text text-black text-center max-w-3xl mx-auto mb-8 md:mb-12">
+        <p className="mobile-text text-white text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Tem alguma dúvida ou quer agendar uma consulta? Preencha o formulário ou entre em contato diretamente pelos nossos canais.
         </p>
         
@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Localização</h4>
-                  <p className="text-black">Barueri - Alphaville, São Paulo</p>
+                  <p className="text-white">Barueri - Alphaville, São Paulo</p>
                 </div>
               </div>
               
@@ -77,7 +77,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Telefone</h4>
-                  <p className="text-black">(11) 95127-4206</p>
+                  <p className="text-white">(11) 95127-4206</p>
                 </div>
               </div>
               
@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-black">contato@cidaesteticista.com.br</p>
+                  <p className="text-white">contato@cidaesteticista.com.br</p>
                 </div>
               </div>
               
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Horário de Atendimento</h4>
-                  <p className="text-black">Segunda a Sexta: 9h às 19h<br />Sábados: 9h às 14h</p>
+                  <p className="text-white">Segunda a Sexta: 9h às 19h<br />Sábados: 9h às 14h</p>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ const Contact = () => {
               ) : (
                 <>
                   <div className="mb-4">
-                    <label htmlFor="name" className="block text-black mb-2 font-medium">Nome</label>
+                    <label htmlFor="name" className="block text-white mb-2 font-medium">Nome</label>
                     <input 
                       type="text" 
                       id="name" 
@@ -147,7 +147,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <label htmlFor="email" className="block text-black mb-2 font-medium">Email</label>
+                    <label htmlFor="email" className="block text-white mb-2 font-medium">Email</label>
                     <input 
                       type="email" 
                       id="email" 
@@ -161,7 +161,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <label htmlFor="phone" className="block text-black mb-2 font-medium">Telefone</label>
+                    <label htmlFor="phone" className="block text-white mb-2 font-medium">Telefone</label>
                     <input 
                       type="tel" 
                       id="phone" 
@@ -174,7 +174,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <label htmlFor="message" className="block text-black mb-2 font-medium">Mensagem</label>
+                    <label htmlFor="message" className="block text-white mb-2 font-medium">Mensagem</label>
                     <textarea 
                       id="message" 
                       name="message" 

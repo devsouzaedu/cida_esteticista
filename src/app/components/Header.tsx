@@ -72,27 +72,27 @@ const Header = () => {
           
           {/* Desktop Menu */}
           <nav className="hidden lg:flex space-x-8">
-            <Link href="/" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+            <Link href="/" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-white hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
               Home
             </Link>
-            <Link href="#sobre" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+            <Link href="#sobre" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-white hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
               Sobre
             </Link>
-            <Link href="#tratamentos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+            <Link href="#tratamentos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-white hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
               Tratamentos
             </Link>
-            <Link href="#cursos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+            <Link href="#cursos" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-white hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
               Cursos
             </Link>
-            <Link href="#contato" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-gray-800 hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
+            <Link href="#contato" className={`font-medium transition-colors hover:scale-105 ${scrolled ? 'text-white hover:text-primary' : 'text-white hover:text-gray-200 drop-shadow-md'}`}>
               Contato
             </Link>
           </nav>
           
           {/* Mobile Menu Button */}
-          <button 
-            onClick={toggleMenu} 
-            className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-white hover:bg-white/10'}`}
+                    <button
+            onClick={toggleMenu}
+            className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-white hover:bg-gray-100' : 'text-white hover:bg-white/10'}`}
             style={{ zIndex: 50002 }}
             aria-label="Menu"
           >
@@ -142,35 +142,35 @@ const Header = () => {
           <nav className="flex flex-col flex-1 p-6 space-y-6">
             <Link 
               href="/" 
-              className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
               onClick={closeMenu}
             >
               🏠 Home
             </Link>
             <Link 
               href="#sobre" 
-              className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
               onClick={closeMenu}
             >
               👩‍⚕️ Sobre
             </Link>
             <Link 
               href="#tratamentos" 
-              className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
               onClick={closeMenu}
             >
               💆‍♀️ Tratamentos
             </Link>
             <Link 
               href="#cursos" 
-              className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
               onClick={closeMenu}
             >
               📚 Cursos
             </Link>
             <Link 
               href="#contato" 
-              className="text-lg font-medium text-gray-800 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
+              className="text-lg font-medium text-white hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-gray-50 border-l-4 border-transparent hover:border-primary" 
               onClick={closeMenu}
             >
               📞 Contato

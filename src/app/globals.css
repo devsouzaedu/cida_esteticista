@@ -7,15 +7,15 @@
   --secondary: #540012;
   --accent: #67AB9F;
   --background: #ffffff;
-  --foreground: #333333;
-  --text-light: #666666;
+  --foreground: #ffffff;
+  --text-light: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1a1a1a;
-    --foreground: #f0f0f0;
-    --text-light: #cccccc;
+    --foreground: #ffffff;
+    --text-light: #ffffff;
   }
 }
 
@@ -30,13 +30,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-instrument-serif), Georgia, serif;
   font-weight: 400;
   letter-spacing: -0.02em;
-  color: #1a1a1a; /* Cor mais escura para melhor contraste */
+  color: #ffffff;
 }
 
 /* Títulos específicos para mobile */
 .mobile-heading {
   font-family: var(--font-instrument-serif), Georgia, serif;
-  color: #1a1a1a; /* Cor mais escura para melhor contraste */
+  color: #ffffff;
 }
 
 @layer components {
@@ -66,9 +66,9 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Classes para melhor contraste */
   .text-contrast {
-    @apply text-gray-900;
-    color: #1a1a1a !important; /* Cor mais escura para melhor contraste */
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    @apply text-white;
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
   }
 
   .text-contrast-dark {
@@ -78,12 +78,12 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Melhor contraste para textos em fundo branco */
   .text-high-contrast {
-    color: #1a1a1a !important;
+    color: #ffffff !important;
     font-weight: 500;
   }
 
   .text-medium-contrast {
-    color: #2d2d2d !important;
+    color: #ffffff !important;
   }
 
   .bg-overlay-light {
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .mobile-text {
     @apply text-sm sm:text-base md:text-lg;
-    color: #2d2d2d; /* Melhor contraste para textos */
+    color: #ffffff;
   }
 
   .mobile-heading {
@@ -113,6 +113,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-instrument-serif), Georgia, serif;
     font-weight: 400;
     letter-spacing: -0.02em;
-    color: #1a1a1a;
+    color: #ffffff;
   }
 }

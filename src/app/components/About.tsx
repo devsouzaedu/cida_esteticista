@@ -31,7 +31,7 @@ export default function About() {
             </div>
             
             {/* Certificações */}
-            <div className="mt-8 space-y-3">
+            <div className="mt-8">
               <h3 className="text-xl font-serif text-high-contrast mb-4">Especializações</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div className="flex items-center">
@@ -59,7 +59,7 @@ export default function About() {
             <div className="relative">
               <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_quemecida.jpeg"
+                  src="/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_hero_1.jpeg"
                   alt="Cida Alves - Esteticista em Barueri e Alphaville"
                   fill
                   className="object-cover"

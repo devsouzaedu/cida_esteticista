@@ -50,14 +50,14 @@ const Treatments = () => {
       <div className="container mobile-padding">
         <div className="text-center mb-12">
           <h2 className="mobile-heading font-normal mb-4 text-contrast font-serif">Tratamentos</h2>
-          <p className="mobile-text text-black max-w-3xl mx-auto mb-8">
+          <p className="mobile-text text-white max-w-3xl mx-auto mb-8">
             Protocolos exclusivos e personalizados para cada tipo de pele e necessidade, sempre buscando os melhores resultados com mais de 11 anos de experiência.
           </p>
           
           {/* Destaque da experiência */}
           <div className="inline-flex items-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-full px-6 py-3 mb-8">
             <span className="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
-            <span className="text-sm font-semibold text-gray-700">Mais de 11 anos de experiência comprovada</span>
+            <span className="text-sm font-semibold text-white">Mais de 11 anos de experiência comprovada</span>
           </div>
         </div>
         
@@ -78,17 +78,17 @@ const Treatments = () => {
               
               <div className="p-6">
                 <div className="mb-3">
-                  <h3 className="text-xl font-bold text-gray-800">{treatment.title}</h3>
+                  <h3 className="text-xl font-bold text-white">{treatment.title}</h3>
                 </div>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed">{treatment.description}</p>
+                <p className="text-white mb-4 leading-relaxed">{treatment.description}</p>
                 
                 {/* Benefícios */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-800 mb-3">Principais benefícios:</h4>
+                  <h4 className="text-sm font-semibold text-white mb-3">Principais benefícios:</h4>
                   <div className="grid grid-cols-2 gap-2">
                     {treatment.benefits.map((benefit, index) => (
-                      <div key={index} className="flex items-center text-sm text-gray-600">
+                      <div key={index} className="flex items-center text-sm text-white">
                         <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></span>
                         {benefit}
                       </div>
