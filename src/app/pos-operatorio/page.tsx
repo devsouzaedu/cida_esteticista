@@ -129,10 +129,10 @@ const PosOperatorioPage = () => {
           <div className="max-w-4xl">
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-8 rounded-r-lg">
               <h3 className="text-xl font-semibold text-blue-800 mb-2">
-                Próximo evento especial
+                Inscrições Abertas
               </h3>
               <p className="text-blue-700">
-                No dia <strong>24/05 (Sábado)</strong> vamos fazer um bate-papo gratuito e super especial para tirar todas as dúvidas
+                Entre em contato para saber mais sobre o curso e garantir sua vaga. Oferecemos <strong>bate-papos gratuitos</strong> para tirar todas as dúvidas!
               </p>
             </div>
 
@@ -157,12 +157,15 @@ const PosOperatorioPage = () => {
               
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="font-medium text-gray-800">
-                  O curso terá início no <strong>dia 7 de junho (sábado)</strong> e acontecerá em encontros semanais, sempre aos <strong>sábados</strong>, no seguinte horário:
+                  O curso acontece em encontros semanais, sempre aos <strong>sábados</strong>, com turmas nos seguintes horários:
                 </p>
                 <ul className="mt-3 space-y-1">
                   <li><strong>1ª turma:</strong> Das 9h às 12h</li>
                   <li><strong>2ª turma:</strong> 13h às 16h</li>
                 </ul>
+                <p className="mt-3 text-sm text-gray-600">
+                  <strong>Inscrições abertas!</strong> Entre em contato para saber sobre as próximas turmas disponíveis.
+                </p>
               </div>
             </div>
           </div>
@@ -395,27 +398,17 @@ const PosOperatorioPage = () => {
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            No dia 24/05 (Sábado) vamos fazer um bate-papo gratuito e super especial para tirar todas as dúvidas
+            Inscrições Abertas para o Curso de Pós-Operatório
           </h2>
-          <p className="text-xl mb-8">Faltam poucos dias!</p>
+          <p className="text-xl mb-8">Não perca a oportunidade de se especializar!</p>
           
-          <div className="flex justify-center gap-8 mb-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold">00</div>
-              <div className="text-sm opacity-75">Dias</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold">00</div>
-              <div className="text-sm opacity-75">Horas</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold">00</div>
-              <div className="text-sm opacity-75">Minutos</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold">00</div>
-              <div className="text-sm opacity-75">Segundos</div>
-            </div>
+          <div className="max-w-2xl mx-auto mb-8">
+            <p className="text-lg opacity-90 mb-4">
+              Oferecemos bate-papos gratuitos para esclarecer todas as suas dúvidas sobre o curso.
+            </p>
+            <p className="opacity-90">
+              Entre em contato e garante sua vaga na próxima turma disponível.
+            </p>
           </div>
 
           <div className="space-y-4">

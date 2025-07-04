@@ -89,6 +89,245 @@ const Courses = () => {
             </a>
           </div>
         </div>
+
+        {/* Curso de Pós-Operatório - Conteúdo Completo */}
+        <div className="mt-16 bg-white rounded-2xl shadow-lg overflow-hidden">
+          {/* Header do Curso */}
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8">
+            <div className="text-center">
+              <div className="text-sm uppercase tracking-wide mb-2 opacity-90">
+                CURSO • PÓS OPERATÓRIO
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                Curso Presencial de Pós‑Operatório
+              </h3>
+              <p className="text-lg opacity-90 mb-6">
+                Especialize-se no atendimento a cirurgias plásticas com segurança e excelência!
+              </p>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+                <div className="flex items-center justify-center">
+                  <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
+                  <span className="text-sm font-medium">70 horas</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
+                  <span className="text-sm font-medium">100% presencial</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
+                  <span className="text-sm font-medium">Certificado</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
+                  <span className="text-sm font-medium">Material incluso</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Sobre o Curso */}
+          <div className="p-8">
+            <h4 className="text-2xl font-bold text-gray-800 mb-4">Sobre o Curso</h4>
+            <div className="space-y-4 text-gray-700">
+              <p>
+                O <strong>Curso Presencial de Pós-Operatório – 70 horas</strong> foi desenvolvido para preparar profissionais da área da estética e da saúde que desejam atuar com segurança, ética e eficiência no acompanhamento de pacientes que passaram por cirurgias plásticas.
+              </p>
+              <p>
+                Com uma abordagem completa, o curso oferece conteúdos teóricos atualizados e práticas supervisionadas que capacitam o aluno a entender o processo de recuperação pós-cirúrgica, identificar complicações, aplicar técnicas terapêuticas e oferecer um atendimento humanizado e de excelência.
+              </p>
+              <p>
+                Ao longo das aulas, você será preparada para atuar em clínicas, consultórios ou atendimentos domiciliares, acompanhando cirurgias como lipoaspirações, abdominoplastias, lifting, blefaroplastia, rinoplastia e outras, com foco na reabilitação, conforto e segurança do paciente.
+              </p>
+              <p>
+                <strong>Ideal para quem busca se destacar no mercado com uma formação sólida e especializada.</strong>
+              </p>
+            </div>
+          </div>
+
+          {/* Diferenciais */}
+          <div className="p-8 bg-gray-50">
+            <h4 className="text-2xl font-bold text-gray-800 mb-8 text-center">Diferenciais do Curso</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-2xl">📚</span>
+                </div>
+                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                  Aulas 100% presenciais
+                </h5>
+                <p className="text-gray-600 text-sm">
+                  Aprenda de verdade! Tenha contato direto com os conteúdos e desenvolva suas habilidades com práticas guiadas.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-2xl">👩‍⚕️</span>
+                </div>
+                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                  Professora experiente
+                </h5>
+                <p className="text-gray-600 text-sm">
+                  Aprenda com Cida Alves, profissional com mais de 11 anos de experiência e 8 anos como docente.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-2xl">📋</span>
+                </div>
+                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                  Material incluso
+                </h5>
+                <p className="text-gray-600 text-sm">
+                  Receba apostilas, fichas de anamnese, protocolos e outros materiais de apoio.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-2xl">🏆</span>
+                </div>
+                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                  Certificado
+                </h5>
+                <p className="text-gray-600 text-sm">
+                  Certificado que comprova sua capacitação e valoriza seu currículo profissional.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-2xl">🤝</span>
+                </div>
+                <h5 className="text-lg font-semibold text-gray-800 mb-2">
+                  Networking
+                </h5>
+                <p className="text-gray-600 text-sm">
+                  Conecte-se com profissionais da área e forme parcerias no mercado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* O que você vai aprender */}
+          <div className="p-8">
+            <h4 className="text-2xl font-bold text-gray-800 mb-6 text-center">O Que Você Vai Aprender</h4>
+            <p className="text-gray-700 text-center mb-8">
+              Neste curso, você será capacitada para atuar com segurança e excelência no atendimento de pacientes em período pós-operatório de diversas cirurgias plásticas.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-blue-50 p-6 rounded-xl">
+                <h5 className="text-lg font-semibold text-blue-800 mb-4">LIPOS</h5>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• Hidrolipo</li>
+                  <li>• Vibrolipo</li>
+                  <li>• Lipoescultura</li>
+                  <li>• Lipo HD</li>
+                  <li>• Lipo de papada</li>
+                  <li>• Lipo de lipedema</li>
+                  <li>• Ginecomastia masculina</li>
+                </ul>
+              </div>
+
+              <div className="bg-green-50 p-6 rounded-xl">
+                <h5 className="text-lg font-semibold text-green-800 mb-4">LIFTINGS</h5>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• Lifting facial</li>
+                  <li>• Lifting de braço</li>
+                  <li>• Lifting de coxa</li>
+                </ul>
+              </div>
+
+              <div className="bg-purple-50 p-6 rounded-xl">
+                <h5 className="text-lg font-semibold text-purple-800 mb-4">ABDOMINOPLASTIAS</h5>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• Tradicional</li>
+                  <li>• Reversa</li>
+                  <li>• Em âncora</li>
+                  <li>• 360 graus</li>
+                  <li>• Miniabdominoplastia</li>
+                </ul>
+              </div>
+
+              <div className="bg-orange-50 p-6 rounded-xl">
+                <h5 className="text-lg font-semibold text-orange-800 mb-4">OUTRAS CIRURGIAS</h5>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• Blefaroplastia</li>
+                  <li>• Rinoplastia</li>
+                  <li>• Rinomodelação</li>
+                  <li>• Otoplastia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Mercado em Crescimento */}
+          <div className="p-8 bg-blue-600 text-white">
+            <div className="text-center">
+              <h4 className="text-2xl font-bold mb-4">Um Mercado em Crescimento que Precisa de Você</h4>
+              <p className="text-lg opacity-90 mb-4">
+                O objetivo deste curso é formar profissionais altamente capacitados para atuar no acompanhamento de pacientes no pós-operatório de cirurgias plásticas, com segurança, ética e excelência técnica.
+              </p>
+              <p className="opacity-90 mb-6">
+                A área de pós-operatório é uma especialidade em constante crescimento e carece de profissionais preparados para atender à demanda crescente por cuidados especializados.
+              </p>
+              <a 
+                href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20Pós%20Operatório!" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+              >
+                Matricule-se Já
+              </a>
+            </div>
+          </div>
+
+          {/* Professora */}
+          <div className="p-8 bg-gray-50">
+            <h4 className="text-2xl font-bold text-gray-800 mb-6 text-center">Professora</h4>
+            <div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
+              <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
+                <Image
+                  src="/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_.jpeg (1).jpeg"
+                  alt="Cida Alves"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h5 className="text-xl font-bold text-gray-800 mb-2">Cida Alves</h5>
+                <p className="text-gray-700 text-sm">
+                  <strong>Cida Alves</strong> é uma profissional com mais de 11 anos de experiência na área de Estética e Cosmetologia. Possui graduação em Estética e Cosmetologia, pós-graduação em Estética Clínica e Estética Avançada, além de especializações em Ozônioterapia e PRP.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Final */}
+          <div className="p-8 text-center">
+            <h4 className="text-xl font-semibold text-gray-800 mb-4">Inscrições Abertas</h4>
+            <p className="text-gray-600 mb-6">Entre em contato para saber mais sobre o curso e garantir sua vaga!</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="/pos-operatorio" 
+                className="btn btn-secondary inline-block"
+              >
+                Ver página completa do curso
+              </a>
+              <a 
+                href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20Pós%20Operatório!" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn bg-green-500 text-white hover:bg-green-600 inline-flex items-center gap-2"
+              >
+                📱 WhatsApp - Inscrições
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
