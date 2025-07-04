@@ -57,7 +57,7 @@ const PosOperatorioPage = () => {
               <div className="text-sm uppercase tracking-wide mb-4 opacity-90">
                 CURSO • PÓS OPERATÓRIO
               </div>
-              <h1 className="text-4xl md:text-5xl font-normal mb-6 leading-tight font-serif">
+              <h1 className="text-4xl md:text-5xl font-normal mb-6 leading-tight font-serif text-white">
                 Curso Presencial de Pós‑Operatório
               </h1>
               <p className="text-xl mb-8 opacity-90">
@@ -309,7 +309,7 @@ const PosOperatorioPage = () => {
       {/* Market Opportunity */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Um Mercado em Crescimento que Precisa de Você</h2>
+          <h2 className="text-3xl font-bold mb-6 text-white">Um Mercado em Crescimento que Precisa de Você</h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl mb-8 opacity-90">
               O objetivo deste curso é formar profissionais altamente capacitados para atuar no acompanhamento de pacientes no pós-operatório de cirurgias plásticas, com segurança, ética e excelência técnica.
@@ -404,7 +404,7 @@ const PosOperatorioPage = () => {
       {/* CTA Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-white">
             Inscrições Abertas para o Curso de Pós-Operatório
           </h2>
           <p className="text-xl mb-8">Não perca a oportunidade de se especializar!</p>

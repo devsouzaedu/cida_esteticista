@@ -121,7 +121,7 @@ const Treatments = () => {
         
         {/* CTA Section */}
         <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white">
-          <h3 className="text-2xl font-bold mb-4">Pronta para transformar sua beleza?</h3>
+          <h3 className="text-2xl font-bold mb-4 text-white">Pronta para transformar sua beleza?</h3>
           <p className="text-lg mb-6 opacity-90">
             Agende uma avaliação gratuita e descubra qual tratamento é ideal para você!
           </p>

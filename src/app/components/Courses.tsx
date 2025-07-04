@@ -99,7 +99,7 @@ const Courses = () => {
                 <div className="text-sm uppercase tracking-wide mb-2 opacity-90">
                   CURSO • PÓS OPERATÓRIO
                 </div>
-                              <h3 className="text-3xl md:text-4xl font-normal mb-4 font-serif">
+                              <h3 className="text-3xl md:text-4xl font-normal mb-4 font-serif text-white">
                 Curso Presencial de Pós‑Operatório
               </h3>
                 <p className="text-lg opacity-90 mb-6">
@@ -280,7 +280,7 @@ const Courses = () => {
           {/* Mercado em Crescimento */}
           <div className="p-8 bg-blue-600 text-white">
             <div className="text-center">
-              <h4 className="text-2xl font-bold mb-4">Um Mercado em Crescimento que Precisa de Você</h4>
+              <h4 className="text-2xl font-bold mb-4 text-white">Um Mercado em Crescimento que Precisa de Você</h4>
               <p className="text-lg opacity-90 mb-4">
                 O objetivo deste curso é formar profissionais altamente capacitados para atuar no acompanhamento de pacientes no pós-operatório de cirurgias plásticas, com segurança, ética e excelência técnica.
               </p>
