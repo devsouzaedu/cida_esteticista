@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-poppins)', 'sans-serif'],
+        serif: ['var(--font-instrument-serif)', 'Georgia', 'serif'],
       },
     },
   },

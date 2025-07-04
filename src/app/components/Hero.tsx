@@ -24,7 +24,7 @@ const Hero = () => {
             Mais de 11 anos de experiência
           </div>
           
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-4 sm:mb-6 leading-tight drop-shadow-lg font-serif">
             Realce sua beleza com 
             <span className="text-yellow-300"> Cida Estética</span>
           </h1>

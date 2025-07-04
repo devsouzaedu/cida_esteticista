@@ -31,7 +31,7 @@ const Courses = () => {
   return (
     <section id="cursos" className="section bg-gray-100">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Cursos</h2>
+        <h2 className="mobile-heading font-normal text-center mb-4 text-contrast font-serif">Cursos</h2>
         <p className="mobile-text text-black text-center max-w-3xl mx-auto mb-8 md:mb-12">
           Capacitação profissional com certificado para atuar na área de estética. Aprenda com quem tem mais de 11 anos de experiência de mercado.
         </p>
@@ -99,9 +99,9 @@ const Courses = () => {
                 <div className="text-sm uppercase tracking-wide mb-2 opacity-90">
                   CURSO • PÓS OPERATÓRIO
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                  Curso Presencial de Pós‑Operatório
-                </h3>
+                              <h3 className="text-3xl md:text-4xl font-normal mb-4 font-serif">
+                Curso Presencial de Pós‑Operatório
+              </h3>
                 <p className="text-lg opacity-90 mb-6">
                   Especialize-se no atendimento a cirurgias plásticas com segurança e excelência!
                 </p>

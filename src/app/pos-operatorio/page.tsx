@@ -57,7 +57,7 @@ const PosOperatorioPage = () => {
               <div className="text-sm uppercase tracking-wide mb-4 opacity-90">
                 CURSO • PÓS OPERATÓRIO
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-normal mb-6 leading-tight font-serif">
                 Curso Presencial de Pós‑Operatório
               </h1>
               <p className="text-xl mb-8 opacity-90">

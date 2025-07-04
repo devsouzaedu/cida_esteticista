@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="sobre" className="section bg-gray-100">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-bold text-center mb-8 md:mb-12 text-contrast">Quem é Cida Alves</h2>
+        <h2 className="mobile-heading font-normal text-center mb-8 md:mb-12 text-contrast font-serif">Quem é Cida Alves</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative h-[300px] sm:h-[400px] rounded-lg overflow-hidden">

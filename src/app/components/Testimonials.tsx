@@ -74,7 +74,7 @@ const Testimonials = () => {
     <section className="section bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="container mobile-padding">
         <div className="text-center mb-12">
-          <h2 className="mobile-heading font-bold mb-4 text-contrast">Depoimentos</h2>
+          <h2 className="mobile-heading font-normal mb-4 text-contrast font-serif">Depoimentos</h2>
           <p className="mobile-text text-black max-w-3xl mx-auto mb-8">
             Veja o que nossas clientes falam sobre os tratamentos com Cida Alves
           </p>
