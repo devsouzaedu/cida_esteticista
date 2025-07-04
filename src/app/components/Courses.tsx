@@ -3,27 +3,27 @@ import Image from 'next/image';
 const coursesData = [
   {
     id: 1,
-    title: 'Estética Facial Avançada',
-    description: 'Aprenda técnicas avançadas de limpeza, hidratação e tratamentos para pele.',
-    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_cursos (1).jpeg',
+    title: 'Estética Corporal Avançada',
+    description: 'Curso completo de técnicas para estética corporal e tratamentos redutores.',
+    image: '/images/cida_esteticista_ cursodeesteticacorporal.jpeg',
   },
   {
     id: 2,
-    title: 'Massagem Modeladora',
-    description: 'Domine as tecnicas de massagem modeladora e drenagem linfática.',
-    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_cursos (2).jpeg',
+    title: 'Massagem com Vela Relaxante',
+    description: 'Aprenda técnicas de massagem com vela para relaxamento e bem-estar.',
+    image: '/images/cida_esteticista curso_tecnica_com_vela_massagem_relaxante(1).jpeg',
   },
   {
     id: 3,
-    title: 'Estética Corporal',
-    description: 'Curso completo de técnicas para estética corporal e tratamentos redutores.',
-    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_cursos (3).jpeg',
+    title: 'Taping Linfático',
+    description: 'Domine as técnicas de taping linfático para drenagem e recuperação.',
+    image: '/images/cida_esteticista_ curso_tecnica_taping_linfatico.jpeg',
   },
   {
     id: 4,
-    title: 'Skincare Avançado',
-    description: 'Aprenda a desenvolver rotinas personalizadas de cuidados para pele.',
-    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_cursos (4).jpeg',
+    title: 'Estética Facial Avançada',
+    description: 'Aprenda técnicas avançadas de limpeza, hidratação e tratamentos para pele.',
+    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_cursos (1).jpeg',
   }
 ];
 
@@ -94,33 +94,46 @@ const Courses = () => {
         <div className="mt-16 bg-white rounded-2xl shadow-lg overflow-hidden">
           {/* Header do Curso */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8">
-            <div className="text-center">
-              <div className="text-sm uppercase tracking-wide mb-2 opacity-90">
-                CURSO • PÓS OPERATÓRIO
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="text-sm uppercase tracking-wide mb-2 opacity-90">
+                  CURSO • PÓS OPERATÓRIO
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                  Curso Presencial de Pós‑Operatório
+                </h3>
+                <p className="text-lg opacity-90 mb-6">
+                  Especialize-se no atendimento a cirurgias plásticas com segurança e excelência!
+                </p>
+                
+                <div className="grid grid-cols-2 gap-4 max-w-md">
+                  <div className="flex items-center">
+                    <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
+                    <span className="text-sm font-medium">70 horas</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
+                    <span className="text-sm font-medium">100% presencial</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
+                    <span className="text-sm font-medium">Certificado</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
+                    <span className="text-sm font-medium">Material incluso</span>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                Curso Presencial de Pós‑Operatório
-              </h3>
-              <p className="text-lg opacity-90 mb-6">
-                Especialize-se no atendimento a cirurgias plásticas com segurança e excelência!
-              </p>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-                <div className="flex items-center justify-center">
-                  <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
-                  <span className="text-sm font-medium">70 horas</span>
-                </div>
-                <div className="flex items-center justify-center">
-                  <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
-                  <span className="text-sm font-medium">100% presencial</span>
-                </div>
-                <div className="flex items-center justify-center">
-                  <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
-                  <span className="text-sm font-medium">Certificado</span>
-                </div>
-                <div className="flex items-center justify-center">
-                  <span className="w-3 h-3 bg-white rounded-full mr-2"></span>
-                  <span className="text-sm font-medium">Material incluso</span>
+              <div className="relative">
+                <div className="bg-white rounded-2xl p-4 shadow-2xl">
+                  <Image
+                    src="/images/cida_esteticista_ Curso de pós operatório avançado.jpeg"
+                    alt="Curso de Pós-Operatório Avançado"
+                    width={400}
+                    height={300}
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
                 </div>
               </div>
             </div>
@@ -326,6 +339,69 @@ const Courses = () => {
                 📱 WhatsApp - Inscrições
               </a>
             </div>
+          </div>
+        </div>
+
+        {/* Galeria de Cursos Adicionais */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Outros Cursos Disponíveis</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/cida_esteticista curso_tecnica_com_vela_massagem_relaxante(2).jpeg"
+                  alt="Massagem com Vela - Técnica Avançada"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h4 className="font-semibold text-gray-800 mb-2">Massagem com Vela - Técnica Avançada</h4>
+                <p className="text-gray-600 text-sm">Aperfeiçoe suas técnicas de massagem relaxante com vela.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/cida_esteticista_cursodemassagem_relaxante_pedras quentes(3).jpeg"
+                  alt="Massagem com Pedras Quentes"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h4 className="font-semibold text-gray-800 mb-2">Massagem com Pedras Quentes</h4>
+                <p className="text-gray-600 text-sm">Aprenda técnicas de massagem relaxante com pedras quentes.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_cursos (2).jpeg"
+                  alt="Curso de Especialização"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h4 className="font-semibold text-gray-800 mb-2">Especialização em Estética</h4>
+                <p className="text-gray-600 text-sm">Curso completo de especialização para profissionais.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-8 text-center">
+            <p className="text-gray-600 mb-4">Interessada em algum curso específico?</p>
+            <a 
+              href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20disponíveis!" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn bg-blue-600 text-white hover:bg-blue-700 inline-flex items-center gap-2"
+            >
+              📱 Consultar Cursos Disponíveis
+            </a>
           </div>
         </div>
       </div>

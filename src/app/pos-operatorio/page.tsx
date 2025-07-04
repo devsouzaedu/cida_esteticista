@@ -73,8 +73,8 @@ const PosOperatorioPage = () => {
             <div className="relative">
               <div className="bg-white rounded-2xl p-6 shadow-2xl">
                 <Image
-                  src="/images/WhatsApp Image 2025-06-10 at 10.38.21 (4).jpeg"
-                  alt="Curso Pós-Operatório"
+                  src="/images/cida_esteticista_ Curso de pós operatório avançado.jpeg"
+                  alt="Curso de Pós-Operatório Avançado"
                   width={400}
                   height={300}
                   className="w-full h-64 object-cover rounded-lg mb-4"

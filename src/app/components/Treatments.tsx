@@ -20,7 +20,7 @@ const treatmentsData: Treatment[] = [
     id: 2,
     title: 'Pós Operatório Humanizado',
     description: 'Cuidados especializados para recuperação após procedimentos estéticos e cirúrgicos.',
-    image: '/images/WhatsApp Image 2025-06-10 at 10.38.21 (4).jpeg',
+    image: '/images/cida_esteticista_ Curso de pós operatório avançado.jpeg',
     link: '/pos-operatorio',
   },
   {
