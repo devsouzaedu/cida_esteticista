@@ -29,33 +29,93 @@ const coursesData = [
 
 const Courses = () => {
   return (
-    <section id="cursos" className="section bg-white">
+    <section id="cursos" className="section bg-gradient-to-b from-blue-50 to-white">
       <div className="container mobile-padding">
-        <h2 className="mobile-heading font-normal text-center mb-4 text-high-contrast font-serif">Cursos</h2>
-        <p className="mobile-text text-medium-contrast text-center max-w-3xl mx-auto mb-8 md:mb-12">
-          Capacitação profissional com certificado para atuar na área de estética. Aprenda com quem tem mais de 11 anos de experiência de mercado.
-        </p>
+        <div className="text-center mb-12">
+          <h2 className="mobile-heading font-normal mb-4 text-high-contrast font-serif">Cursos para Profissionais</h2>
+          <p className="mobile-text text-medium-contrast max-w-4xl mx-auto mb-6">
+            <strong>Capacitação profissional exclusiva para graduados em estética</strong> que desejam se especializar e se tornarem referência no mercado. Cida Alves ensina profissionais a atenderem outros profissionais com excelência.
+          </p>
+          
+          {/* Destaque do público-alvo */}
+          <div className="inline-flex items-center bg-gradient-to-r from-yellow-50 to-orange-50 rounded-full px-6 py-3 mb-8 border border-yellow-200">
+            <span className="w-3 h-3 bg-orange-500 rounded-full mr-3"></span>
+            <span className="text-sm font-semibold text-orange-700">Exclusivo para profissionais graduados em estética</span>
+          </div>
+        </div>
+
+        {/* Seção explicativa */}
+        <div className="bg-white rounded-2xl p-8 mb-12 shadow-lg border border-gray-100">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Dois Tipos de Serviços</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <span className="text-blue-600 text-sm font-bold">1</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">TRATAMENTOS para Clientes</h4>
+                    <p className="text-gray-600 text-sm">Cida Alves atende clientes com tratamentos de ozonioterapia, estética facial, corporal, alopecia e pós-operatório em Alphaville e Barueri.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <span className="text-purple-600 text-sm font-bold">2</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">CURSOS para Profissionais</h4>
+                    <p className="text-gray-600 text-sm">Cida Alves ensina <strong>profissionais graduados em estética</strong> a se especializarem e se tornarem referência no atendimento a outros clientes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden">
+              <Image
+                src="/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_curso.jpeg"
+                alt="Cida Alves ensinando profissionais de estética"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {coursesData.map(course => (
-            <div key={course.id} className="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden">
+            <div key={course.id} className="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow">
               <div className="relative h-64 md:h-auto md:w-2/5">
                 <Image
                   src={course.image}
-                  alt={course.title}
+                  alt={`${course.title} - Curso para profissionais graduados`}
                   fill
                   className="object-cover"
                 />
+                <div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  PROFISSIONAIS
+                </div>
               </div>
               <div className="p-6 md:w-3/5 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-2">{course.title}</h3>
                   <p className="text-medium-contrast mb-4">{course.description}</p>
+                  
+                  {/* Requisitos */}
+                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-4">
+                    <h4 className="text-sm font-semibold text-yellow-800 mb-1">Requisito:</h4>
+                    <p className="text-xs text-yellow-700">Graduação em Estética ou área correlata</p>
+                  </div>
                 </div>
                 <div className="mt-4">
-                  <button className="text-primary font-medium hover:underline">
-                    Saiba mais
-                  </button>
+                  <a 
+                    href={`https://wa.me/5511951274206?text=Oi!%20sou%20profissional%20graduado%20em%20estética%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20${encodeURIComponent(course.title)}!`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-medium hover:underline inline-flex items-center gap-2"
+                  >
+                    <span>📚</span>
+                    Informações para Profissionais
+                  </a>
                 </div>
               </div>
             </div>
@@ -72,7 +132,7 @@ const Courses = () => {
               Veja mais sobre os cursos
             </a>
             <a 
-              href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20de%20est%C3%A9tica!" 
+              href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20com%20voc%C3%AA!" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn bg-green-500 text-white hover:bg-green-600 inline-flex items-center gap-2"

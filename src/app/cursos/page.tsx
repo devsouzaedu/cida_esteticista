@@ -165,23 +165,23 @@ const CoursesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary text-white py-16">
+      <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-16">
         <div className="container mobile-padding text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Pronta para se profissionalizar?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Entre em contato para saber sobre as próximas turmas e condições especiais.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Profissional Graduado? Especialize-se!</h2>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">
+            Se você é graduado em estética e quer se tornar referência no mercado, nossos cursos são para você. Entre em contato para saber sobre as próximas turmas e condições especiais.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos%20de%20est%C3%A9tica!" 
+              href="https://wa.me/5511951274206?text=Oi!%20sou%20profissional%20graduado%20em%20estética%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos!" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn bg-white text-primary hover:bg-gray-100"
+              className="btn bg-white text-purple-600 hover:bg-gray-100 inline-flex items-center gap-2"
             >
-              Fale conosco no WhatsApp
+              📚 Informações para Profissionais
             </a>
-            <Link href="/" className="btn border-2 border-white text-white hover:bg-white hover:text-primary">
-              Voltar ao site
+            <Link href="/" className="btn border-2 border-white text-white hover:bg-white hover:text-purple-600">
+              Ver Tratamentos para Clientes
             </Link>
           </div>
         </div>

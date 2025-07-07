@@ -44,7 +44,7 @@ const Contact = () => {
       <div className="container mobile-padding">
         <h2 className="mobile-heading font-bold text-center mb-4 text-contrast">Entre em Contato</h2>
         <p className="mobile-text text-black text-center max-w-3xl mx-auto mb-8 md:mb-12">
-          Tem alguma dúvida ou quer agendar uma consulta? Preencha o formulário ou entre em contato diretamente pelos nossos canais.
+          Agende seu tratamento de <strong>ozonioterapia</strong>, <strong>estética facial</strong>, <strong>estética corporal</strong>, <strong>alopecia</strong> ou <strong>pós-operatório em Alphaville e Barueri</strong>. Para profissionais graduados, consulte nossos cursos especializados.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -61,8 +61,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Localização</h4>
-                  <p className="text-black">Barueri - Alphaville, São Paulo</p>
-                  <p className="text-sm text-gray-600 mt-1">Atendimento domiciliar e em consultório</p>
+                  <p className="text-black"><strong>Alphaville - Barueri</strong>, São Paulo</p>
+                  <p className="text-sm text-gray-600 mt-1">Atendimento em consultório e domiciliar em Alphaville, Barueri e região</p>
                 </div>
               </div>
               
@@ -75,7 +75,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Telefone</h4>
                   <p className="text-black">(11) 95127-4206</p>
-                  <p className="text-sm text-gray-600 mt-1">WhatsApp disponível</p>
+                  <p className="text-sm text-gray-600 mt-1">WhatsApp disponível para agendamentos</p>
                 </div>
               </div>
               
@@ -87,10 +87,33 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Horário de Atendimento</h4>
-                  <p className="text-black">Segunda a Sexta: 9h às 18h</p>
-                  <p className="text-black">Sábado: 9h às 15h</p>
+                  <p className="text-black">Segunda a Sexta: 8h às 18h</p>
+                  <p className="text-black">Sábado: 8h às 14h</p>
                   <p className="text-sm text-gray-600 mt-1">Agendamento obrigatório</p>
                 </div>
+              </div>
+            </div>
+            
+            {/* Seção de serviços rápidos */}
+            <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-200">
+              <h4 className="text-lg font-semibold mb-4 text-blue-800">Agendamentos Rápidos</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a 
+                  href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20um%20tratamento%20em%20Alphaville/Barueri!" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-green-500 text-white text-center py-2 px-4 rounded-lg text-sm font-medium hover:bg-green-600 transition-colors"
+                >
+                  🌟 Tratamentos
+                </a>
+                <a 
+                  href="https://wa.me/5511951274206?text=Oi!%20sou%20profissional%20graduado%20e%20gostaria%20de%20saber%20sobre%20cursos!" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-purple-500 text-white text-center py-2 px-4 rounded-lg text-sm font-medium hover:bg-purple-600 transition-colors"
+                >
+                  🎓 Cursos
+                </a>
               </div>
             </div>
             
@@ -166,7 +189,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Conte-me sobre o tratamento que você tem interesse ou suas dúvidas..."
+                    placeholder="Conte sobre o tratamento de interesse (ozonioterapia, estética facial/corporal, alopecia, pós-operatório) ou dúvidas sobre cursos para profissionais..."
                   ></textarea>
                 </div>
                 
@@ -179,7 +202,7 @@ const Contact = () => {
                     {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
                   </button>
                   <a 
-                    href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20uma%20consulta%20com%20voc%C3%AA!" 
+                    href="https://wa.me/5511951274206?text=Oi!%20gostaria%20de%20agendar%20uma%20consulta%20em%20Alphaville/Barueri!" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition-colors inline-flex items-center gap-2"
