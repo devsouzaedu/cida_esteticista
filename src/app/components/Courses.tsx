@@ -3,27 +3,9 @@ import Image from 'next/image';
 const coursesData = [
   {
     id: 1,
-    title: 'Estética Corporal Avançada',
-    description: 'Curso completo de técnicas para estética corporal e tratamentos redutores.',
-    image: '/images/cida_esteticista_ cursodeesteticacorporal.jpeg',
-  },
-  {
-    id: 2,
-    title: 'Massagem com Vela Relaxante',
-    description: 'Aprenda técnicas de massagem com vela para relaxamento e bem-estar.',
-    image: '/images/cida_esteticista curso_tecnica_com_vela_massagem_relaxante(1).jpeg',
-  },
-  {
-    id: 3,
-    title: 'Taping Linfático',
-    description: 'Domine as técnicas de taping linfático para drenagem e recuperação.',
-    image: '/images/cida_esteticista_ curso_tecnica_taping_linfatico.jpeg',
-  },
-  {
-    id: 4,
-    title: 'Estética Facial Avançada',
-    description: 'Aprenda técnicas avançadas de limpeza, hidratação e tratamentos para pele.',
-    image: '/images/cida_esteticista_BARUERI_ALPHAVILLEfoto_cursos (1).jpeg',
+    title: 'Pós-Operatório Humanizado',
+    description: 'Curso presencial de 70 horas para profissionais graduados em estética que desejam se especializar no atendimento pós-cirúrgico com segurança e excelência.',
+    image: '/images/cida_esteticista_ (4).jpeg',
   }
 ];
 
@@ -81,47 +63,72 @@ const Courses = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {coursesData.map(course => (
-            <div key={course.id} className="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="relative h-64 md:h-auto md:w-2/5">
-                <Image
-                  src={course.image}
-                  alt={`${course.title} - Curso para profissionais graduados`}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                  PROFISSIONAIS
-                </div>
-              </div>
-              <div className="p-6 md:w-3/5 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xl font-semibold text-primary mb-2">{course.title}</h3>
-                  <p className="text-medium-contrast mb-4">{course.description}</p>
-                  
-                  {/* Requisitos */}
-                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-4">
-                    <h4 className="text-sm font-semibold text-yellow-800 mb-1">Requisito:</h4>
-                    <p className="text-xs text-yellow-700">Graduação em Estética ou área correlata</p>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <a 
-                    href={`https://wa.me/5511951274206?text=Oi!%20sou%20profissional%20graduado%20em%20estética%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20${encodeURIComponent(course.title)}!`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary font-medium hover:underline inline-flex items-center gap-2"
-                  >
-                    <span>📚</span>
-                    Informações para Profissionais
-                  </a>
-                </div>
+        {/* Card único do curso */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="flex flex-col lg:flex-row bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+            <div className="relative h-80 lg:h-auto lg:w-1/2">
+              <Image
+                src={coursesData[0].image}
+                alt={`${coursesData[0].title} - Curso para profissionais graduados`}
+                fill
+                className="object-cover"
+              />
+              <div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                PROFISSIONAIS
               </div>
             </div>
-          ))}
+            <div className="p-8 lg:w-1/2 flex flex-col justify-between">
+              <div>
+                <h3 className="text-2xl font-semibold text-primary mb-4">{coursesData[0].title}</h3>
+                <p className="text-medium-contrast mb-6 text-lg leading-relaxed">{coursesData[0].description}</p>
+                
+                {/* Destaques do curso */}
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                    70 horas presenciais
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                    Material incluso
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                    Certificado válido
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                    Prática supervisionada
+                  </div>
+                </div>
+                
+                {/* Requisitos */}
+                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                  <h4 className="text-sm font-semibold text-yellow-800 mb-2">📋 Requisito Obrigatório:</h4>
+                  <p className="text-sm text-yellow-700">Graduação em Estética ou área correlata</p>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a 
+                  href="https://wa.me/5511951274206?text=Oi!%20sou%20profissional%20graduado%20em%20estética%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20Pós-Operatório!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-green-500 text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition-colors inline-flex items-center justify-center gap-2"
+                >
+                  <span>📱</span>
+                  WhatsApp - Informações
+                </a>
+                <a 
+                  href="/pos-operatorio"
+                  className="flex-1 border-2 border-primary text-primary text-center py-3 px-6 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors"
+                >
+                  Ver Detalhes do Curso
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        
+
         <div className="mt-8 md:mt-12 text-center">
           <p className="mobile-text text-medium-contrast mb-4 md:mb-6">Interessada em se profissionalizar? Entre em contato para saber sobre as próximas turmas!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
